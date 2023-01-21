@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './Components/Navigation';
 import Books from './Pages/Books';
 import Categories from './Pages/Categories';
+import './App.css';
 
 export default class App extends Component {
   constructor(props) {
