@@ -4,7 +4,7 @@ import { checkStatus } from '../redux/categories/categories';
 
 export default function CheckStatus() {
   const dispatch = useDispatch();
-  const status = useSelector((state) => state.status);
+  const status = useSelector((state) => state.categories.status);
 
   const handleCheckStatus = () => {
     dispatch(checkStatus());
