@@ -1,18 +1,9 @@
 // Actions
-const ADD_BOOK = 'bookstore/books/ADD';
-const REMOVE_BOOK = 'bookstore/books/REMOVE';
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 const initialState = {
-  books: [{
-    bookId: 1,
-    Title: 'Jane Eyre',
-    Author: 'Charlotte Brontë',
-  },
-  {
-    bookId: 2,
-    Title: 'The Hunger Games',
-    Author: 'Suzanne Collins',
-  }],
+  books: [],
 };
 
 // Export Action Creators
