@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 
 const Book = ({
-  bookId, Title, Author, onClick,
+  bookId, Title, Author,
 }) => (
   <ul key={bookId}>
     <li>
@@ -11,7 +11,7 @@ const Book = ({
       by
       {' '}
       {Author}
-      <button type="button" onClick={onClick}>Remove</button>
+      <button type="button">Remove</button>
     </li>
   </ul>
 );
@@ -20,7 +20,6 @@ Book.propTypes = {
   bookId: PropTypes.number.isRequired,
   Title: PropTypes.string.isRequired,
   Author: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
 };
 
 export default Book;
