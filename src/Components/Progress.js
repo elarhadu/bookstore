@@ -9,15 +9,17 @@ export default function Progress() {
           <div className="progress-status" />
         </div>
         <div className="statistics">
-          <p>80%</p>
-          <p>Completed</p>
+          <p className="percentage">80%</p>
+          <p className="complete">Completed</p>
         </div>
       </div>
       <div className="vertical-pline" />
       <div className="chapter-status">
-        <div className="chapter-number">
-          <p>CURRENT CHAPTER</p>
-          <p>Chapter 20</p>
+        <div>
+          <p className="current-chapter">CURRENT CHAPTER</p>
+          <p className="current-chapter-number">Chapter 20</p>
+        </div>
+        <div>
           <button type="button" className="update-progress">
             UPDATE PROGRESS
           </button>

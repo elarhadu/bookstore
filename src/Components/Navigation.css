@@ -21,7 +21,7 @@
   font-weight: 500;
   font-size: 30px;
   text-decoration: none;
-  font-family: "Playfair Display", serif;
+  font-family: 'Montserrat', sans-serif;
   color: #0290ff;
 }
 
@@ -47,4 +47,6 @@ ul li {
 .nav-links {
   display: flex;
   text-decoration: none;
+  opacity: 1;
+  color: #121212;
 }
