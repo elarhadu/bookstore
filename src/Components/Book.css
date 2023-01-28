@@ -1,0 +1,16 @@
+.book-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  border-radius: 5px;
+}
+
+.about-book button {
+  background-color: white;
+  border: none;
+  color: #0290ff;
+}
+
+.book-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}

@@ -1,9 +1,25 @@
-.nav-menu {
-  display: flex;
+.nav-bar {
+  /* display: flex;
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   justify-content: space-evenly;
   align-items: baseline;
-  padding: 10px;
+  padding: 10px; */
+  padding: 24px 4%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  grid-gap: 40px;
+  gap: 40px;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 10px;
 }
 
 .app-name {
@@ -15,19 +31,18 @@
 }
 
 .user-icon {
-  border-radius: 30px;
-  background-color: white;
+  cursor: pointer;
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
 }
 
 .material-symbols-outlined {
   color: #0290ff;
   background-color: white;
   border-radius: 10px;
-}
-
-ul {
-  display: flex;
-  gap: 10px;
 }
 
 ul li {

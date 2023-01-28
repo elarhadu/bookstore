@@ -1,0 +1,28 @@
+.current-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.update-progress {
+  background-color: #0290ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.progress-tracker {
+  display: flex;
+}
+
+.progress-status {
+  /* position: absolute; */
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #307bbe;
+  border-left-color: #e8e8e8;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
