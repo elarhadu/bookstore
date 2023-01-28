@@ -2,25 +2,29 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 
 const Book = ({
-  Title,
-  Author,
+  title,
+  author,
+  category,
   onClick,
 }) => (
   <ul>
     <li>
-      {Title}
+      {title}
+      {' '}
+      {category}
       {' '}
       by
       {' '}
-      {Author}
+      {author}
       <button type="button" onClick={onClick}>Remove</button>
     </li>
   </ul>
 );
 
 Book.propTypes = {
-  Title: PropTypes.string.isRequired,
-  Author: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 

@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { v4 as uuid } from 'uuid';
 import { addBook } from '../redux/books/books';
 
 export default function AddForm() {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-
   const handleAddBook = (e) => {
     e.preventDefault();
     if (title === '' && author === '') return;
-    dispatch(addBook({ bookId: Math.random(), Title: title, Author: author }));
+    dispatch(addBook({
+      item_id: uuid(),
+      title,
+      author,
+      category: 'Fiction',
+    }));
     setAuthor('');
     setTitle('');
   };
