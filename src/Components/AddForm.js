@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuid } from 'uuid';
 import { addBook } from '../redux/books/books';
+import './AddForm.css';
 
 export default function AddForm() {
   const dispatch = useDispatch();
@@ -21,13 +22,13 @@ export default function AddForm() {
   };
 
   return (
-    <>
-      <h2>Add A New Book</h2>
-      <form onSubmit={handleAddBook}>
+    <div className="add-new">
+      <h2>ADD NEW BOOK</h2>
+      <form onSubmit={handleAddBook} className="form">
         <input type="text" placeholder="Title" name="title" onChange={(e) => setTitle(e.target.value)} value={title} />
         <input type="text" placeholder="Author" name="author" onChange={(e) => setAuthor(e.target.value)} value={author} />
-        <button type="submit">Add Book</button>
+        <button type="submit">ADD BOOK</button>
       </form>
-    </>
+    </div>
   );
 }

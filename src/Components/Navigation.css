@@ -1,0 +1,52 @@
+.nav-bar {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+.app-name {
+  font-weight: 500;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #0290ff;
+}
+
+.user-icon {
+  cursor: pointer;
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+
+.material-symbols-outlined {
+  color: #0290ff;
+  background-color: white;
+  border-radius: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+  text-decoration: none;
+  opacity: 1;
+  color: #121212;
+}

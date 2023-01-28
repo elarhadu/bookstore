@@ -1,24 +1,34 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import './Book.css';
+import Progress from './Progress';
 
 const Book = ({
-  title,
-  author,
-  category,
-  onClick,
+  title, author, category, onClick,
 }) => (
-  <ul>
-    <li>
-      {title}
-      {' '}
-      {category}
-      {' '}
-      by
-      {' '}
-      {author}
-      <button type="button" onClick={onClick}>Remove</button>
-    </li>
-  </ul>
+  <li>
+    <div className="book">
+      <div className="about-book">
+        <div>
+          <p className="category">{category}</p>
+          <h3 className="book-title">{title}</h3>
+          <h6 className="author">{author}</h6>
+        </div>
+        <div className="btn-container">
+          <button type="button">
+            Comment
+          </button>
+          <div className="vertical-line" />
+          <button type="button" onClick={onClick}>
+            Remove
+          </button>
+          <div className="vertical-line" />
+          <button type="button">Edit</button>
+        </div>
+      </div>
+      <Progress />
+    </div>
+  </li>
 );
 
 Book.propTypes = {

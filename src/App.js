@@ -8,9 +8,7 @@ import './App.css';
 export default function App() {
   return (
     <Router>
-
       <Navigation />
-      <h1>BOOKSTORE📖</h1>
       <Routes>
         <Route path="/" element={<Books />} />
         <Route path="/categories" element={<Categories />} />
