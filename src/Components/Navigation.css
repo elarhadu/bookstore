@@ -11,7 +11,7 @@
   font-size: 30px;
   text-decoration: none;
   font-family: "Playfair Display", serif;
-  color: rgb(76, 76, 202);
+  color: #0290ff;
 }
 
 .user-icon {
@@ -20,7 +20,7 @@
 }
 
 .material-symbols-outlined {
-  color: rgb(76, 76, 202);
+  color: #0290ff;
   background-color: white;
   border-radius: 10px;
 }
