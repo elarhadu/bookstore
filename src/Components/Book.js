@@ -6,23 +6,29 @@ import Progress from './Progress';
 const Book = ({
   title, author, category, onClick,
 }) => (
-  <ul className="book-card">
-    <li className="book-details">
+  <li>
+    <div className="book">
       <div className="about-book">
-        <p>{category}</p>
-        <h3 className="book-title">{title}</h3>
-        <p>{author}</p>
-        <button type="button" className="divider">
-          Comment
-        </button>
-        <button type="button" onClick={onClick} className="divider">
-          Remove
-        </button>
-        <button type="button">Edit</button>
+        <div>
+          <p>{category}</p>
+          <h3 className="book-title">{title}</h3>
+          <p>{author}</p>
+        </div>
+        <div className="btn-container">
+          <button type="button">
+            Comment
+          </button>
+          <div className="vertical-line" />
+          <button type="button" onClick={onClick}>
+            Remove
+          </button>
+          <div className="vertical-line" />
+          <button type="button">Edit</button>
+        </div>
       </div>
       <Progress />
-    </li>
-  </ul>
+    </div>
+  </li>
 );
 
 Book.propTypes = {

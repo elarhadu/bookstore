@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: center;
 }
 
 .update-progress {
@@ -14,10 +15,10 @@
 
 .progress-tracker {
   display: flex;
+  align-items: center;
 }
 
 .progress-status {
-  /* position: absolute; */
   border-radius: 50%;
   width: 4.25rem;
   height: 4.25rem;
@@ -25,4 +26,11 @@
   border-left-color: #e8e8e8;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.vertical-pline {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 0 1.688rem 0 1.938rem;
+  background-color: #e8e8e8;
 }

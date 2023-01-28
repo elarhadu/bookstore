@@ -1,25 +1,20 @@
 .nav-bar {
-  /* display: flex;
-  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-  justify-content: space-evenly;
-  align-items: baseline;
-  padding: 10px; */
-  padding: 24px 4%;
-  background-color: #fff;
-  border-bottom: 1px solid #e8e8e8;
   display: flex;
-  align-items: center;
-  grid-gap: 40px;
-  gap: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px;
 }
 
 .nav-menu {
   display: flex;
+  gap: 40px;
 }
 
 .nav-menu ul {
   display: flex;
   gap: 10px;
+  padding: 0;
 }
 
 .app-name {

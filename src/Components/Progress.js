@@ -13,6 +13,7 @@ export default function Progress() {
           <p>Completed</p>
         </div>
       </div>
+      <div className="vertical-pline" />
       <div className="chapter-status">
         <div className="chapter-number">
           <p>CURRENT CHAPTER</p>
@@ -22,7 +23,6 @@ export default function Progress() {
           </button>
         </div>
       </div>
-
     </div>
   );
 }
