@@ -1,0 +1,40 @@
+.nav-menu {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 10px;
+}
+
+.app-name {
+  font-weight: 500;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: rgb(76, 76, 202);
+}
+
+.user-icon {
+  border-radius: 30px;
+  background-color: white;
+}
+
+.material-symbols-outlined {
+  color: rgb(76, 76, 202);
+  background-color: white;
+  border-radius: 10px;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+  text-decoration: none;
+}

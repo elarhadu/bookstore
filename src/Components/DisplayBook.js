@@ -18,7 +18,6 @@ export default function DisplayBook() {
   return (
     <div className="book-display">
       {books.map((book) => (
-        // console.log(book)
         <Book
           key={book.item_id}
           title={book.title}
